@@ -1,0 +1,147 @@
+body {
+
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  }
+
+  header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: plum;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  }
+
+  nav {
+  text-align: center;
+  padding: 10px;
+  }
+
+  nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 20px;
+  }
+
+  .responsive-main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .button {
+  background-color: #555;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  }
+
+  .container {
+      width: 100%;
+      max-width: 1200px; 
+      padding: 0 20px; 
+      box-sizing: border-box;
+  }
+
+  .section {
+  padding: 40px;
+  background-color: rgba(255, 192, 203, 0.5);
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  }
+
+  .section1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  }
+
+  .section1 img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  }
+
+  .section1 h2 {
+  font-size: 2.5rem;
+  }
+
+  .catGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  }
+
+  .catGrid img {
+  width: 100%;
+  height: auto;
+  }
+
+  footer {
+  background-color: plum;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  }
+
+  
+
+  #burger-menu {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 2rem;
+      height: 2rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 10;
+  }
+
+  
+
+  #burger-menu span {
+      width: 2rem;
+      height: 0.25rem;
+      background: white;
+      transition: all 0.3s linear;
+      position: relative;
+      transform-origin: 1px;
+  }
+
+  
+
+  @media screen and (max-width: 600px) {
+      nav a {
+          display: none;
+      }
+
+      #burger-menu {
+          display: flex;
+      }
+  }
+
+
+  .section img {
+      max-width: 100%;
+      height: auto;
+  }
+
+
+  button:hover, .section img:hover {
+      transform: scale(1.05); 
+      transition: transform 0.3s ease-in-out; 
+  }
+
+  
+
+  button:hover {
+      background-color: plum; 
+  }
